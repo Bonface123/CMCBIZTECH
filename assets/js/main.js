@@ -143,12 +143,16 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!slideshow || initialized) return;
       const slides = slideshow.querySelectorAll('.hero-slide');
       const dots = slideshow.querySelectorAll('.hero-dot');
+      const captions = slideshow.querySelectorAll('.hero-caption');
       const prevBtn = document.getElementById('slide-prev');
       const nextBtn = document.getElementById('slide-next');
       let current = 0;
       let interval;
 
       function showSlide(idx) {
+        // Defensive: clamp idx
+        if (idx < 0) idx = slides.length - 1;
+        if (idx >= slides.length) idx = 0;
         slides.forEach((slide, i) => {
           slide.classList.toggle('opacity-100', i === idx);
           slide.classList.toggle('opacity-0', i !== idx);
@@ -160,6 +164,10 @@ document.addEventListener('DOMContentLoaded', function () {
           dot.classList.toggle('opacity-80', i === idx);
           dot.classList.toggle('opacity-50', i !== idx);
         });
+        captions.forEach((caption, i) => {
+          caption.classList.toggle('opacity-100', i === idx);
+          caption.classList.toggle('opacity-0', i !== idx);
+        });
         current = idx;
       }
       function nextSlide() {
@@ -169,12 +177,14 @@ document.addEventListener('DOMContentLoaded', function () {
         showSlide((current - 1 + slides.length) % slides.length);
       }
       function startAuto() {
+        stopAuto(); // Always clear before starting
         interval = setInterval(nextSlide, 5000);
       }
       function stopAuto() {
-        clearInterval(interval);
+        if (interval) clearInterval(interval);
+        interval = null;
       }
-      if (slides.length > 1) {
+      if (slides.length > 1 && captions.length === slides.length) {
         showSlide(0);
         startAuto();
         if (nextBtn) nextBtn.onclick = () => { nextSlide(); stopAuto(); startAuto(); };
