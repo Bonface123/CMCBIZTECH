@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CMCBIZTECH – Global digital agency for strategy, automation, and creative growth." />
+    <title>CMCBIZTECH | Global Digital Agency</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { font-family: 'Poppins', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-white text-[#121212] font-[Poppins]">
+    <!-- Header Loader -->
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section class="bg-[#121212] text-white py-20">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+        <!-- Left: Text Block -->
+        <div class="md:w-1/2">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Global Results, <span class="text-[#C29D59]">African Innovation</span>
+          </h1>
+          <p class="text-[#CCCCCC] mb-6">
+            Tech-powered business solutions to help startups and enterprises grow smarter, faster.
+          </p>
+          <a href="contact.html" class="inline-block bg-[#C29D59] text-white px-6 py-3 rounded-full shadow hover:bg-[#a7843f] transition">
+            Get Free Strategy Session
+          </a>
+        </div>
+        <!-- Right: Hero Slideshow -->
+        <div class="md:w-1/2 w-full flex flex-col items-center">
+          <div id="hero-slideshow" class="relative w-full max-w-md mx-auto rounded-xl shadow-lg overflow-hidden">
+            <img src="assets/images/20250707_1229_African Tech Collaboration_simple_compose_01jzj3cpszfhgb44p0gk2rrg3d.png" alt="Slide 1" class="hero-slide w-full h-64 object-cover transition-opacity duration-700 opacity-100" />
+            <img src="assets/images/20250707_1234_Kenyan Digital Innovation Hub_simple_compose_01jzj3p0tkenst7gt8xegj8hw6.png" alt="Slide 2" class="hero-slide w-full h-64 object-cover transition-opacity duration-700 opacity-0 absolute top-0 left-0" />
+            <img src="assets/images/20250707_1229_African Tech Collaboration_simple_compose_01jzj3cpszfhgb44p0gk2rrg3d.png" alt="Slide 3" class="hero-slide w-full h-64 object-cover transition-opacity duration-700 opacity-0 absolute top-0 left-0" />
+            <img src="assets/images/20250707_1229_African Tech Collaboration_simple_compose_01jzj3cpt0ed4tgd94zf7kv7ct.png" alt="Slide 4" class="hero-slide w-full h-64 object-cover transition-opacity duration-700 opacity-0 absolute top-0 left-0" />
+            <!-- Slide Controls -->
+            <button id="slide-prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-[#121212]/70 text-white rounded-full p-2 z-10 hover:bg-[#C29D59] transition"><i class="fas fa-chevron-left"></i></button>
+            <button id="slide-next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-[#121212]/70 text-white rounded-full p-2 z-10 hover:bg-[#C29D59] transition"><i class="fas fa-chevron-right"></i></button>
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+              <span class="hero-dot w-3 h-3 rounded-full bg-[#C29D59] opacity-80 cursor-pointer"></span>
+              <span class="hero-dot w-3 h-3 rounded-full bg-white opacity-50 cursor-pointer"></span>
+              <span class="hero-dot w-3 h-3 rounded-full bg-white opacity-50 cursor-pointer"></span>
+              <span class="hero-dot w-3 h-3 rounded-full bg-white opacity-50 cursor-pointer"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="bg-white py-16 px-4 md:px-8 border-b border-[#E5E5E5]">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="flex flex-col items-center">
+          <span class="text-4xl text-[#C29D59] mb-2">🌍</span>
+          <h3 class="text-xl font-bold mb-2">Global Reach</h3>
+          <p class="text-gray-700">Serving clients in Africa, Europe, and North America with 24/7 support.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="text-4xl text-[#C29D59] mb-2">💡</span>
+          <h3 class="text-xl font-bold mb-2">Innovation</h3>
+          <p class="text-gray-700">AI-driven, creative, and technical solutions for modern business.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="text-4xl text-[#C29D59] mb-2">📈</span>
+          <h3 class="text-xl font-bold mb-2">Results-Driven</h3>
+          <p class="text-gray-700">Measurable ROI, efficiency, and growth for every client.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="bg-[#F9F9F9] py-16 px-4 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10 text-[#121212]">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow p-6 border border-[#E5E5E5]">
+            <div class="text-3xl text-[#C29D59] mb-2">✍️</div>
+            <h3 class="text-lg font-semibold mb-1">Freelance Writing</h3>
+            <p class="text-gray-700 text-sm mb-2">Articles, technical docs, blogs, and more.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 border border-[#E5E5E5]">
+            <div class="text-3xl text-[#C29D59] mb-2">✅</div>
+            <h3 class="text-lg font-semibold mb-1">Virtual Assistance</h3>
+            <p class="text-gray-700 text-sm mb-2">Email management, data entry, research.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 border border-[#E5E5E5]">
+            <div class="text-3xl text-[#C29D59] mb-2">🎓</div>
+            <h3 class="text-lg font-semibold mb-1">Online Tutoring</h3>
+            <p class="text-gray-700 text-sm mb-2">Business, strategy, finance, and more.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 border border-[#E5E5E5]">
+            <div class="text-3xl text-[#C29D59] mb-2">🤖</div>
+            <h3 class="text-lg font-semibold mb-1">AI & Automation</h3>
+            <p class="text-gray-700 text-sm mb-2">Chatbots, workflow automation, analytics.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 border border-[#E5E5E5]">
+            <div class="text-3xl text-[#C29D59] mb-2">🎨</div>
+            <h3 class="text-lg font-semibold mb-1">Graphic Design</h3>
+            <p class="text-gray-700 text-sm mb-2">Logos, branding, marketing materials.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 border border-[#E5E5E5]">
+            <div class="text-3xl text-[#C29D59] mb-2">📝</div>
+            <h3 class="text-lg font-semibold mb-1">Transcription</h3>
+            <p class="text-gray-700 text-sm mb-2">Audio, video, and meeting notes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition / KPIs -->
+    <section class="bg-white py-16 px-4 md:px-8 border-b border-[#E5E5E5]">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        <div class="flex flex-col items-center">
+          <span class="text-3xl text-[#C29D59] mb-2">🚀</span>
+          <div class="text-2xl font-bold">500+</div>
+          <div class="text-sm text-gray-700">Clients Supported</div>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl text-[#C29D59] mb-2">🌍</span>
+          <div class="text-2xl font-bold">4</div>
+          <div class="text-sm text-gray-700">Continents Served</div>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl text-[#C29D59] mb-2">⏱️</span>
+          <div class="text-2xl font-bold">24/7</div>
+          <div class="text-sm text-gray-700">Support & Delivery</div>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl text-[#C29D59] mb-2">💡</span>
+          <div class="text-2xl font-bold">50+</div>
+          <div class="text-sm text-gray-700">Services Offered</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Highlights -->
+    <section class="bg-[#F9F9F9] py-16 px-4 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10 text-[#121212]">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow p-6 border border-[#E5E5E5]">
+            <img src="/assets/images/mockup1.jpg" alt="Project 1" class="rounded-lg mb-4 w-full h-40 object-cover" />
+            <h3 class="text-lg font-semibold mb-1">Academic Writing Platform</h3>
+            <p class="text-sm text-gray-700 mb-2">Laravel, Vue.js | +35% efficiency for students</p>
+            <a href="portfolio.html" class="text-[#C29D59] font-medium hover:underline">View Portfolio</a>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 border border-[#E5E5E5]">
+            <img src="/assets/images/mockup2.jpg" alt="Project 2" class="rounded-lg mb-4 w-full h-40 object-cover" />
+            <h3 class="text-lg font-semibold mb-1">Brand Kit for Kenyan Startup</h3>
+            <p class="text-sm text-gray-700 mb-2">Figma, Illustrator | Improved brand consistency</p>
+            <a href="portfolio.html" class="text-[#C29D59] font-medium hover:underline">View Portfolio</a>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 border border-[#E5E5E5]">
+            <img src="/assets/images/mockup3.jpg" alt="Project 3" class="rounded-lg mb-4 w-full h-40 object-cover" />
+            <h3 class="text-lg font-semibold mb-1">Real Estate Website</h3>
+            <p class="text-sm text-gray-700 mb-2">WordPress, Tailwind | +78% sales in 6 months</p>
+            <a href="portfolio.html" class="text-[#C29D59] font-medium hover:underline">View Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-white py-16 px-4 md:px-8 border-b border-[#E5E5E5]">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10 text-[#121212]">What Our Clients Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-[#F9F9F9] rounded-xl shadow p-6">
+            <p class="text-gray-700 italic mb-4">"CMCBIZTECH helped us automate our business processes and save countless hours every week!"</p>
+            <div class="font-semibold text-[#C29D59]">Jane Doe</div>
+            <div class="text-sm text-gray-600">COO, Fintech Startup</div>
+          </div>
+          <div class="bg-[#F9F9F9] rounded-xl shadow p-6">
+            <p class="text-gray-700 italic mb-4">"Their design and content team delivered exactly what we needed for our product launch."</p>
+            <div class="font-semibold text-[#C29D59]">John Smith</div>
+            <div class="text-sm text-gray-600">Marketing Lead, SaaS Company</div>
+          </div>
+          <div class="bg-[#F9F9F9] rounded-xl shadow p-6">
+            <p class="text-gray-700 italic mb-4">"We saw measurable results in less than a month. Highly recommend CMCBIZTECH!"</p>
+            <div class="font-semibold text-[#C29D59]">Amina Yusuf</div>
+            <div class="text-sm text-gray-600">Director, Education NGO</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-white py-16 px-6 shadow-inner">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#121212] mb-4">
+          Let's <span class="text-[#C29D59]">Build Your Digital Advantage</span>
+        </h2>
+        <p class="text-[#555555] mb-8">
+          Let our experienced team at CMCBIZTECH craft a custom strategy for your growth.
+        </p>
+        <a href="contact.html" class="inline-block bg-[#C29D59] text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-[#a7843f] transition-all">
+          Get Started
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer Loader -->
+    <div id="footer"></div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

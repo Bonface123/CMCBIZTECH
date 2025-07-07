@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CMCBIZTECH Services – Explore our global digital, AI, and creative offerings." />
+    <title>Services | CMCBIZTECH</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { font-family: 'Poppins', sans-serif; }
+      .filter-btn {
+        @apply flex items-center px-7 py-3 rounded-full font-extrabold text-lg border-2 border-[#C29D59] text-[#C29D59] bg-white shadow-lg transition-all duration-300 gap-2
+          hover:bg-[#C29D59] hover:text-white hover:shadow-2xl hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#C29D59]/40 focus:ring-offset-2;
+        box-shadow: 0 2px 8px 0 rgba(194,157,89,0.10), 0 0 0 2px transparent;
+        transition: box-shadow 0.3s, background 0.3s, color 0.3s, transform 0.2s;
+        margin: 0.25rem 0.5rem; /* extra spacing between buttons */
+      }
+      .filter-btn.active, .filter-btn:active {
+        @apply text-white;
+        background: linear-gradient(90deg, #C29D59 0%, #e6c98a 100%);
+        box-shadow: 0 0 0 4px #C29D59, 0 4px 24px 0 #C29D59AA;
+        border-color: #C29D59;
+        transform: scale(1.08);
+      }
+      .filter-btn:focus-visible {
+        outline: 3px solid #C29D59;
+        outline-offset: 2px;
+      }
+      .filter-btn i {
+        @apply text-xl;
+        filter: drop-shadow(0 1px 1px #C29D59AA);
+      }
+      /* Pop animation */
+      .filter-btn:active {
+        transform: scale(1.12);
+        transition: transform 0.1s;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-[#121212] font-[Poppins]">
+    <div id="header"></div>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+      <!-- Badge -->
+      <div class="text-sm bg-[#C29D59] text-white inline-block px-4 py-1 rounded-full mb-4 mx-auto mt-10 block text-center font-semibold shadow">
+        Premium Digital Solutions &bull; Global Impact
+      </div>
+      <section class="bg-[#121212] text-white py-20">
+        <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center px-6">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Explore Our <span class="text-[#C29D59]">Digital Solutions</span>
+          </h1>
+          <p class="text-lg md:text-xl text-[#CCCCCC] mb-6">
+            Digital, creative, and AI-powered solutions for global business growth.
+          </p>
+          <a href="#services-grid" class="inline-block bg-[#C29D59] text-white px-8 py-4 rounded-full shadow-lg hover:bg-[#a7843f] transition font-extrabold text-lg">
+            Explore Services
+          </a>
+          <!-- Optional hero image here -->
+        </div>
+      </section>
+      <h1 class="text-3xl md:text-4xl font-bold text-center mb-10 text-[#C29D59]">Our Services</h1>
+      <!-- Filter Bar -->
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-th-large mr-2"></i>All
+        </button>
+        <button class="filter-btn" data-filter="virtual">
+          <i class="fas fa-user-clock mr-2"></i>Virtual Assistance
+        </button>
+        <button class="filter-btn" data-filter="writing">
+          <i class="fas fa-pen-nib mr-2"></i>Freelance Writing
+        </button>
+        <button class="filter-btn" data-filter="tutoring">
+          <i class="fas fa-chalkboard-teacher mr-2"></i>Online Tutoring
+        </button>
+        <button class="filter-btn" data-filter="design">
+          <i class="fas fa-paint-brush mr-2"></i>Design
+        </button>
+        <button class="filter-btn" data-filter="ai">
+          <i class="fas fa-robot mr-2"></i>AI & Automation
+        </button>
+        <button class="filter-btn" data-filter="social">
+          <i class="fas fa-share-alt mr-2"></i>Social Media
+        </button>
+        <button class="filter-btn" data-filter="transcription">
+          <i class="fas fa-keyboard mr-2"></i>Transcription
+        </button>
+        <button class="filter-btn" data-filter="support">
+          <i class="fas fa-headset mr-2"></i>Customer Support
+        </button>
+        <button class="filter-btn" data-filter="sales">
+          <i class="fas fa-chart-line mr-2"></i>Sales
+        </button>
+      </div>
+      <!-- Services Grid -->
+      <div id="services-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Virtual Assistance -->
+        <div class="service-card" data-category="virtual">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Email Management</h3>
+            <p class="text-[#444]">Professional inbox organization and response handling.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="virtual">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Data Entry</h3>
+            <p class="text-[#444]">Accurate, efficient data input and spreadsheet management.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="virtual">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Research</h3>
+            <p class="text-[#444]">Market, academic, and business research tailored to your needs.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="virtual">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Scheduling</h3>
+            <p class="text-[#444]">Calendar management and meeting coordination.</p>
+          </div>
+        </div>
+        <!-- Freelance Writing -->
+        <div class="service-card" data-category="writing">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Article Writing</h3>
+            <p class="text-[#444]">Well-researched, engaging articles for any industry.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="writing">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Copywriting</h3>
+            <p class="text-[#444]">Persuasive copy for ads, websites, and campaigns.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="writing">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Blog Writing</h3>
+            <p class="text-[#444]">SEO-optimized blog content tailored to your brand.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="writing">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Technical Writing</h3>
+            <p class="text-[#444]">Clear, concise documentation and manuals.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="writing">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Creative Writing</h3>
+            <p class="text-[#444]">Storytelling and creative content for brands and campaigns.</p>
+          </div>
+        </div>
+        <!-- Online Tutoring -->
+        <div class="service-card" data-category="tutoring">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Organizational Behavior</h3>
+            <p class="text-[#444]">Expert tutoring in OB, HR, and management topics.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="tutoring">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Marketing & Strategy</h3>
+            <p class="text-[#444]">Guidance in marketing, entrepreneurship, and business strategy.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="tutoring">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Assignments & Projects</h3>
+            <p class="text-[#444]">Support for case studies, projects, and academic writing.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="tutoring">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Software Development</h3>
+            <p class="text-[#444]">Tutoring in web apps and software dev basics.</p>
+          </div>
+        </div>
+        <!-- Graphic & Web Design -->
+        <div class="service-card" data-category="design">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Logo Design</h3>
+            <p class="text-[#444]">Custom logos to elevate your brand identity.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="design">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Website Design</h3>
+            <p class="text-[#444]">Modern, responsive websites for any business.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="design">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Ad & Branding Design</h3>
+            <p class="text-[#444]">Ads, branding, and marketing collateral.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="design">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Database Design</h3>
+            <p class="text-[#444]">Database structure and design for business needs.</p>
+          </div>
+        </div>
+        <!-- AI & Automation -->
+        <div class="service-card" data-category="ai">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">AI Chatbots</h3>
+            <p class="text-[#444]">Conversational AI for customer support and automation.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="ai">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Automation Agents</h3>
+            <p class="text-[#444]">Automate repetitive business processes with smart agents.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="ai">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">NLP & Prompt Engineering</h3>
+            <p class="text-[#444]">Natural language processing and prompt design (future).</p>
+          </div>
+        </div>
+        <!-- Social Media Management -->
+        <div class="service-card" data-category="social">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Content Creation</h3>
+            <p class="text-[#444]">Engaging posts, graphics, and campaigns for your brand.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="social">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Engagement</h3>
+            <p class="text-[#444]">Building and nurturing your online community.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="social">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Campaigns</h3>
+            <p class="text-[#444]">Strategy and execution for digital campaigns.</p>
+          </div>
+        </div>
+        <!-- Transcription -->
+        <div class="service-card" data-category="transcription">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Audio Transcription</h3>
+            <p class="text-[#444]">Accurate transcription of audio files and interviews.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="transcription">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Video Transcription</h3>
+            <p class="text-[#444]">Transcribing video content for accessibility and SEO.</p>
+          </div>
+        </div>
+        <!-- Customer Support -->
+        <div class="service-card" data-category="support">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Email Support</h3>
+            <p class="text-[#444]">Responsive support for your customers via email.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="support">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Social Media Support</h3>
+            <p class="text-[#444]">Assisting customers on all major social platforms.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="support">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Feedback Systems</h3>
+            <p class="text-[#444]">Collecting and analyzing customer feedback.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="support">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">VPN & Security Awareness</h3>
+            <p class="text-[#444]">Training and support for secure digital operations.</p>
+          </div>
+        </div>
+        <!-- Sales & Marketing -->
+        <div class="service-card" data-category="sales">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Product Promotion</h3>
+            <p class="text-[#444]">Strategic promotion to boost your product's reach.</p>
+          </div>
+        </div>
+        <div class="service-card" data-category="sales">
+          <div class="bg-white shadow-md p-6 rounded-lg h-full flex flex-col justify-between">
+            <h3 class="text-xl font-bold text-[#121212] mb-2">Digital Marketing</h3>
+            <p class="text-[#444]">Comprehensive digital campaigns for growth.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="bg-white py-16 px-6 shadow-inner">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#121212] mb-4">
+          Need a <span class="text-[#C29D59]">Tailored Business Solution?</span>
+        </h2>
+        <p class="text-[#555555] mb-8">
+          Let our experienced team at CMCBIZTECH craft a custom strategy for your growth.
+        </p>
+        <a href="services.html" class="inline-block bg-[#C29D59] text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-[#a7843f] transition-all">
+          View All Services
+        </a>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script src="assets/js/main.js"></script>
+    <script>
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const serviceCards = document.querySelectorAll('.service-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const category = btn.getAttribute('data-filter');
+
+          serviceCards.forEach(card => {
+            card.style.display = (category === 'all' || card.dataset.category === category) ? 'block' : 'none';
+          });
+        });
+      });
+    </script>
+  </body>
+</html> 
