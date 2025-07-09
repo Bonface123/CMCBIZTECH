@@ -1,33 +1,31 @@
-<header class="sticky top-0 z-50 bg-[#121212] shadow-md font-[Poppins] transition-all duration-300 backdrop-blur-md">
-  <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    <!-- Brand -->
-    <a href="index.html" class="text-2xl font-bold text-white tracking-wide">CMC<span class="text-[#C29D59] font-bold">BIZTECH</span></a>
-    <!-- Desktop Nav -->
-    <ul class="hidden md:flex gap-8 text-white font-medium">
-      <li><a href="index.html" class="hover:text-[#C29D59] transition nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2">Home</a></li>
-      <li><a href="about.html" class="hover:text-[#C29D59] transition nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2">About</a></li>
-      <li><a href="services.html" class="hover:text-[#C29D59] transition nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2">Services</a></li>
-      <li><a href="portfolio.html" class="hover:text-[#C29D59] transition nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2">Portfolio</a></li>
-      <li><a href="team.html" class="hover:text-[#C29D59] transition nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2">Team</a></li>
-      <li><a href="contact.html" class="hover:text-[#C29D59] transition nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2">Contact</a></li>
+<header class="bg-white shadow-sm sticky top-0 z-40 font-[Poppins]">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+    <div class="flex items-center gap-2">
+      <span class="text-2xl font-extrabold text-[#C29D59] tracking-wide">CMC BIZTECH</span>
+    </div>
+    <ul class="hidden md:flex gap-8 text-base font-semibold">
+      <li><a href="index.html" class="hover:text-[#C29D59] transition">Home</a></li>
+      <li><a href="about.html" class="hover:text-[#C29D59] transition">About</a></li>
+      <li><a href="services.html" class="hover:text-[#C29D59] transition">Services</a></li>
+      <li><a href="portfolio.html" class="hover:text-[#C29D59] transition">Portfolio</a></li>
+      <li><a href="team.html" class="hover:text-[#C29D59] transition">Our Team</a></li>
+      <li><a href="contact.html" class="hover:text-[#C29D59] transition">Contact</a></li>
     </ul>
-    <!-- Mobile Hamburger -->
-    <button id="menu-toggle" class="md:hidden text-2xl text-white focus:outline-none focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2" aria-label="Open navigation" aria-expanded="false">
-      <i class="fas fa-bars"></i>
+    <a href="contact.html" class="hidden md:inline-block bg-[#C29D59] text-white px-6 py-2 rounded-full font-bold shadow hover:bg-[#a7843f] transition">Get a Quote</a>
+    <!-- Hamburger -->
+    <button id="nav-toggle" class="md:hidden text-2xl text-[#C29D59] focus:outline-none" aria-label="Open navigation" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
     </button>
   </nav>
-  <!-- Mobile Nav Overlay -->
-  <div id="mobile-menu" class="fixed inset-0 bg-[#121212] bg-opacity-100 z-50 flex flex-col items-center justify-center gap-8 text-xl text-white font-semibold transition-all duration-300 opacity-0 pointer-events-none translate-y-[-40px]">
-    <button id="mobile-menu-close" class="absolute top-6 right-6 text-3xl text-white focus:outline-none focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2" aria-label="Close navigation">
-      <i class="fas fa-times"></i>
-    </button>
-    <a href="index.html" class="hover:text-[#C29D59] nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2" tabindex="0">Home</a>
-    <a href="about.html" class="hover:text-[#C29D59] nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2" tabindex="0">About</a>
-    <a href="services.html" class="hover:text-[#C29D59] nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2" tabindex="0">Services</a>
-    <a href="portfolio.html" class="hover:text-[#C29D59] nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2" tabindex="0">Portfolio</a>
-    <a href="team.html" class="hover:text-[#C29D59] nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2" tabindex="0">Team</a>
-    <a href="contact.html" class="hover:text-[#C29D59] nav-link border-b-2 border-transparent focus:ring-2 focus:ring-[#C29D59] focus:ring-offset-2" tabindex="0">Contact</a>
-    <!-- Add more links if needed -->
-    <!-- Optional: Social icons for mobile nav -->
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden fixed inset-0 bg-white bg-opacity-95 z-50 flex flex-col items-center justify-center gap-8 text-xl font-semibold hidden">
+    <a href="index.html" class="hover:text-[#C29D59]">Home</a>
+    <a href="about.html" class="hover:text-[#C29D59]">About</a>
+    <a href="services.html" class="hover:text-[#C29D59]">Services</a>
+    <a href="portfolio.html" class="hover:text-[#C29D59]">Portfolio</a>
+    <a href="team.html" class="hover:text-[#C29D59]">Our Team</a>
+    <a href="contact.html" class="hover:text-[#C29D59]">Contact</a>
+    <a href="contact.html" class="bg-[#C29D59] text-white px-6 py-2 rounded-full font-bold shadow hover:bg-[#a7843f] transition">Get a Quote</a>
+    <button id="close-mobile-menu" class="absolute top-6 right-6 text-3xl text-[#C29D59]">&times;</button>
   </div>
 </header> 

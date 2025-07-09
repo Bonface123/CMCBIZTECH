@@ -3,25 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="About CMCBIZTECH – Kenya-based global digital agency for business support, creative, and tech-driven solutions." />
-    <title>About Us | CMCBIZTECH</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="About CMCBIZTECH – African-rooted, global digital agency for business, AI, and creative solutions." />
+    <title>About | CMCBIZTECH</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Heroicons CDN for icons -->
+    <script src="https://unpkg.com/heroicons@2.0.13/dist/24/outline.js"></script>
     <style>
       body { font-family: 'Poppins', sans-serif; }
+      /* Simple fade/slide animations */
+      .animate-fade-in { animation: fadeIn 1.2s both; }
+      .animate-up { animation: upIn 1.1s both; }
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes upIn { from { opacity: 0; transform: translateY(40px);} to { opacity: 1; transform: none; } }
     </style>
   </head>
-  <body class="bg-white text-[#121212]">
+  <body class="bg-white text-[#121212] font-[Poppins]">
     <div id="header"></div>
 
-    <!-- Optional Badge -->
-    <div class="text-sm bg-[#C29D59] text-white inline-block px-4 py-1 rounded-full mb-4 mx-auto mt-10 block text-center">
-      Kenyan Excellence • Global Reach
-    </div>
-
-    <!-- Hero Section -->
+    <main>
+   <!-- Hero Section -->
     <section class="bg-[#121212] text-white py-20">
       <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center px-6">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">
@@ -37,64 +40,139 @@
       </div>
     </section>
 
-    <!-- About Section (2-column) -->
-    <section class="py-16 px-6 bg-white">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <!-- Left: Text -->
-        <div class="flex-1">
-          <h2 class="text-2xl font-semibold text-[#121212] mb-4">About CMCBIZTECH</h2>
-          <p class="mb-4 text-[#444]">CMCBIZTECH is a Kenyan-founded digital agency serving clients across Africa and the globe. We empower businesses, organizations, and entrepreneurs to thrive in the digital era.</p>
-          <p class="mb-4 text-[#444]">Our services span AI-powered support, academic and business tutoring, professional writing, research, and custom technology solutions. We blend local expertise with global standards to deliver measurable results.</p>
-          <p class="mb-6 text-[#444]">With 500+ satisfied clients and a mission to drive global transformation, CMCBIZTECH is your partner for innovation, growth, and digital excellence.</p>
-          <a href="services.html" class="inline-block bg-[#C29D59] hover:bg-[#B58945] text-white font-semibold px-6 py-3 rounded-full transition">Explore Services</a>
+      <!-- Stats (boxed, 4 columns) -->
+      <section class="bg-[#f9f9f9] py-12">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="bg-white rounded-xl shadow p-8 flex flex-col items-center">
+            <span class="text-3xl font-bold text-[#C29D59]">500+</span>
+            <span class="text-sm text-[#333] mt-2">Projects Delivered</span>
+          </div>
+          <div class="bg-white rounded-xl shadow p-8 flex flex-col items-center">
+            <span class="text-3xl font-bold text-[#C29D59]">200+</span>
+            <span class="text-sm text-[#333] mt-2">Happy Clients</span>
+          </div>
+          <div class="bg-white rounded-xl shadow p-8 flex flex-col items-center">
+            <span class="text-3xl font-bold text-[#C29D59]">25+</span>
+            <span class="text-sm text-[#333] mt-2">Countries Served</span>
+          </div>
+          <div class="bg-white rounded-xl shadow p-8 flex flex-col items-center">
+            <span class="text-3xl font-bold text-[#C29D59]">97%</span>
+            <span class="text-sm text-[#333] mt-2">Client Satisfaction</span>
+          </div>
         </div>
-        <!-- Right: Image -->
-        <div class="flex-1 flex justify-center">
-          <img src="assets/images/Cyr.jpg" alt="CMCBIZTECH Team" class="w-full max-w-md rounded-xl shadow-lg object-cover">
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Stats/Values Section -->
-    <section class="py-12 bg-[#F9F9F9] px-6">
-      <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-3xl mb-2 text-[#C29D59]">🌍</div>
-          <h3 class="text-lg font-bold text-[#C29D59] mb-1">15+ Countries</h3>
-          <p class="text-[#444] text-sm">Serving clients worldwide</p>
-        </div>
-        <div>
-          <div class="text-3xl mb-2 text-[#C29D59]">🎓</div>
-          <h3 class="text-lg font-bold text-[#C29D59] mb-1">PhD-Level Experts</h3>
-          <p class="text-[#444] text-sm">Academic & business excellence</p>
-        </div>
-        <div>
-          <div class="text-3xl mb-2 text-[#C29D59]">💼</div>
-          <h3 class="text-lg font-bold text-[#C29D59] mb-1">500+ Clients</h3>
-          <p class="text-[#444] text-sm">Businesses supported</p>
-        </div>
-        <div>
-          <div class="text-3xl mb-2 text-[#C29D59]">🧠</div>
-          <h3 class="text-lg font-bold text-[#C29D59] mb-1">AI & Innovation</h3>
-          <p class="text-[#444] text-sm">Cutting-edge digital solutions</p>
-        </div>
-      </div>
-    </section>
+   <!-- Our Story (2-column, left text, right image) -->
+<section class="bg-white py-20 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    
+    <!-- Text Content -->
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-bold text-[#121212] mb-4">Our Story</h2>
+      <p class="text-[#555] leading-relaxed mb-2">
+        CMCBIZTECH was born from a mission to help businesses grow smarter through African-driven innovation. What began as a small virtual assistant brand has grown into a multidisciplinary agency helping startups and enterprises streamline operations through AI, tutoring, research, tech, and design.
+      </p>
+      <p class="text-[#555] leading-relaxed">
+        We now serve clients in 25+ countries, completing 500+ successful projects while building lasting relationships with businesses, institutions, and entrepreneurs globally.
+      </p>
+    </div>
 
-    <!-- CTA Section -->
-    <section class="bg-white py-16 px-6 shadow-inner">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-[#121212] mb-4">
-          Partner With <span class="text-[#C29D59]">Kenya's Premier Tech Agency</span>
-        </h2>
-        <p class="text-[#555555] mb-8">
-          Let our experienced team at CMCBIZTECH craft a custom strategy for your growth.
-        </p>
-        <a href="contact.html" class="inline-block bg-[#C29D59] text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-[#a7843f] transition-all">
-          Hire CMCBIZTECH
-        </a>
-      </div>
-    </section>
+    <!-- Fixed Height Image -->
+    <div class="flex-1 order-1 md:order-2 flex justify-center">
+      <img 
+        src="assets/images/AI&Data_Services.jpg" 
+        alt="Our Story" 
+        class="h-64 w-full max-w-sm rounded-2xl shadow-lg object-cover object-center" 
+      />
+    </div>
+
+  </div>
+</section>
+
+
+      <!-- Mission & Vision (side-by-side cards) -->
+      <section class="bg-[#f9f9f9] py-16 px-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl shadow p-8 flex flex-col items-center">
+            <h3 class="text-xl font-bold text-[#C29D59] mb-2">Our Mission</h3>
+            <p class="text-[#555]">To provide expert-driven, AI-powered digital services that help businesses thrive globally — from Africa to the world.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-8 flex flex-col items-center">
+            <h3 class="text-xl font-bold text-[#C29D59] mb-2">Our Vision</h3>
+            <p class="text-[#555]">To become the leading African-rooted digital agency transforming lives and businesses through accessible, innovative, and reliable global solutions.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Values (grid) -->
+      <section class="bg-white py-16 px-6">
+        <h2 class="text-2xl font-bold text-[#121212] text-center mb-8">Our Core Values</h2>
+        <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div class="bg-[#f9f9f9] rounded-xl shadow p-6 flex flex-col items-center">
+            <span class="text-2xl text-[#C29D59] font-bold mb-2">★</span>
+            <h4 class="font-semibold text-[#C29D59] mb-2">Excellence</h4>
+            <p class="text-[#555] text-sm">Always exceeding expectations.</p>
+          </div>
+          <div class="bg-[#f9f9f9] rounded-xl shadow p-6 flex flex-col items-center">
+            <span class="text-2xl text-[#C29D59] font-bold mb-2">⚡</span>
+            <h4 class="font-semibold text-[#C29D59] mb-2">Innovation</h4>
+            <p class="text-[#555] text-sm">AI-first and forward-thinking.</p>
+          </div>
+          <div class="bg-[#f9f9f9] rounded-xl shadow p-6 flex flex-col items-center">
+            <span class="text-2xl text-[#C29D59] font-bold mb-2">✔</span>
+            <h4 class="font-semibold text-[#C29D59] mb-2">Reliability</h4>
+            <p class="text-[#555] text-sm">Timely delivery with accountability.</p>
+          </div>
+          <div class="bg-[#f9f9f9] rounded-xl shadow p-6 flex flex-col items-center">
+            <span class="text-2xl text-[#C29D59] font-bold mb-2">🌍</span>
+            <h4 class="font-semibold text-[#C29D59] mb-2">Global Impact</h4>
+            <p class="text-[#555] text-sm">Driving change beyond borders.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Timeline (vertical, boxed) -->
+      <section class="bg-white py-20 px-6">
+        <h2 class="text-2xl font-bold text-[#121212] text-center mb-10">Our Journey</h2>
+        <div class="max-w-2xl mx-auto flex flex-col gap-8 border-l-4 border-[#C29D59] pl-8">
+          <div class="relative">
+            <span class="absolute -left-10 top-1.5 w-6 h-6 rounded-full bg-[#C29D59] border-4 border-white"></span>
+            <h4 class="font-semibold text-[#C29D59]">2020</h4>
+            <p class="text-[#555] text-sm">Launched CMCBIZTECH with freelance virtual assistant services.</p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-10 top-1.5 w-6 h-6 rounded-full bg-[#C29D59] border-4 border-white"></span>
+            <h4 class="font-semibold text-[#C29D59]">2021</h4>
+            <p class="text-[#555] text-sm">Expanded into academic tutoring and writing.</p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-10 top-1.5 w-6 h-6 rounded-full bg-[#C29D59] border-4 border-white"></span>
+            <h4 class="font-semibold text-[#C29D59]">2022</h4>
+            <p class="text-[#555] text-sm">Grew global reach — now serving clients in 10+ countries.</p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-10 top-1.5 w-6 h-6 rounded-full bg-[#C29D59] border-4 border-white"></span>
+            <h4 class="font-semibold text-[#C29D59]">2023</h4>
+            <p class="text-[#555] text-sm">Introduced AI, design, and custom development solutions.</p>
+          </div>
+          <div class="relative">
+            <span class="absolute -left-10 top-1.5 w-6 h-6 rounded-full bg-[#C29D59] border-4 border-white"></span>
+            <h4 class="font-semibold text-[#C29D59]">2024</h4>
+            <p class="text-[#555] text-sm">Completed 500+ projects across Africa, Europe, and the US.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA (boxed, shadow) -->
+      <section class="bg-[#C29D59] py-16 px-4 text-center flex justify-center">
+        <div class="max-w-2xl w-full mx-auto rounded-2xl shadow-xl p-10 md:p-14 flex flex-col items-center">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">Let's Build Something Global</h2>
+          <p class="text-white text-lg mb-6">Partner with us for smart, scalable, digital transformation.</p>
+          <a href="/contact.html" class="inline-block bg-white text-[#C29D59] border-2 border-white px-10 py-4 rounded-full font-extrabold shadow-lg hover:bg-[#f8f8f8] hover:text-[#a7843f] hover:border-[#a7843f] transition text-lg mt-6">Get a Quote</a>
+        </div>
+      </section>
+    </main>
 
     <div id="footer"></div>
     <script src="assets/js/main.js"></script>

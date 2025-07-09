@@ -19,33 +19,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Mobile menu toggle functionality
+  // Mobile menu toggle functionality (updated for new header)
   function setupMobileMenu() {
-    const toggle = document.getElementById('menu-toggle');
+    const toggle = document.getElementById('nav-toggle');
     const menu = document.getElementById('mobile-menu');
-    const closeBtn = document.getElementById('mobile-menu-close');
-    const navLinks = menu ? menu.querySelectorAll('.nav-link') : [];
-
-    function openMenu() {
-      menu.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-[-40px]');
-      menu.classList.add('opacity-100', 'translate-y-0');
-      toggle.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeMenu() {
-      menu.classList.add('opacity-0', 'pointer-events-none', 'translate-y-[-40px]');
-      menu.classList.remove('opacity-100', 'translate-y-0');
-      toggle.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
+    const closeBtn = document.getElementById('close-mobile-menu');
     if (toggle && menu && closeBtn) {
-      toggle.onclick = openMenu;
-      closeBtn.onclick = closeMenu;
-      navLinks.forEach(link => {
-        link.onclick = closeMenu;
+      toggle.onclick = function() {
+        menu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      };
+      closeBtn.onclick = function() {
+        menu.classList.add('hidden');
+        document.body.style.overflow = '';
+      };
+      // Close menu on nav link click (for mobile)
+      menu.querySelectorAll('a').forEach(link => {
+        link.onclick = function() {
+          menu.classList.add('hidden');
+          document.body.style.overflow = '';
+        };
       });
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') closeMenu();
+        if (e.key === 'Escape') {
+          menu.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
       });
     }
   }
